@@ -1,0 +1,217 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Header */
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 1.35rem;
+  margin-left: 8px;
+}
+
+.sixDots {
+  margin: 0 12px;
+}
+
+.headerText {
+  font-size: 0.712rem;
+}
+
+/* Cheesecake Image */
+
+.imgCake {
+  max-width: 93%;
+  border-radius: 9px;
+}
+
+/* Aside */
+
+.time-servings {
+  display: flex;
+  flex-direction: column;
+}
+
+.asideIcon {
+  margin: 0 6px 0 12px;
+}
+
+.asideHeader,
+.asideText {
+  padding: 0;
+  font-size: 10.06px;
+}
+
+.asideHeader {
+  color: grey;
+  margin-bottom: -10px;
+}
+
+.serving {
+  color: orange;
+  font-weight: 400;
+}
+
+.mw-95 {
+  max-width: 95%;
+}
+
+/* ingredients section */
+
+#ingredients {
+  margin-left: 8px;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.ingredient-em {
+  font-family: "Playfair Display", serif;
+  font-size: 0.97rem;
+}
+
+form div {
+  margin-bottom: 7px;
+}
+
+input[type="checkbox"] {
+  margin-right: 6px;
+}
+
+label {
+  font-size: 0.77rem;
+}
+
+label em {
+  font-weight: 600;
+}
+
+/* instructions section */
+
+#instructions {
+  margin-left: 8px;
+}
+
+.orange-box {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: orange;
+  font-size: 2rem;
+  color: white;
+  border-radius: 8px;
+  font-family: "Playfair Display", serif;
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+
+#instructions div {
+  margin-bottom: 7px;
+}
+
+#instructions div p {
+  font-size: 0.77rem;
+  max-width: 78%;
+}
+
+#instructions a {
+  font-size: 0.77rem;
+  color: #6c757d;
+}
+
+/* Footer  */
+
+footer {
+  text-align: center;
+  padding: 6px 2px;
+}
+
+footer p,
+.footer-link {
+  color: #6c757d;
+  font-size: 0.87rem;
+}
+
+.footer-link:first-child {
+  font-weight: bold;
+}
+
+.footer-link:nth-child(2) {
+  text-decoration: none;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 304px) {
+  .last-flexItem {
+    margin: auto;
+    margin-top: 8px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .headerText {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  html {
+    margin: 0 auto;
+    max-width: 1024px;
+    position: relative;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2{
+      font-size: 2rem;
+  }
+
+  .headerText {
+    font-size: 1.2rem;
+    max-width: 70%;
+  }
+
+  .ingredient-em{
+      font-size: 1.3rem;
+  }
+
+  label, #instructions div p {
+      font-size: 1rem;
+  }
+
+  .time-servings {
+    width: 165px;
+    height: 260px;
+    border-radius: 13px;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+    position: absolute;
+    right: 10%;
+  }
+
+  .asideIcon{
+      margin-right: 8px;
+  }
+
+  .asideHeader, .asideText{
+      font-size: 15px;
+  }
+
+  .asideHeader{
+      margin-bottom: -5px;
+  }
+
+}
